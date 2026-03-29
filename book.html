@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dental Clinic Website - Booking Page</title>
+    <link rel="stylesheet" href="book styles.css">
+</head>
+
+<body>
+	<div class="heading">
+		<div class="logo">
+			<a href="home.html">
+				<img src="Images-&-Fonts/logo.png">
+			</a>
+		</div>
+		<div class="button-container">
+			<a href="*" class="buttons">About Us</a>
+			<a href="*" class="buttons">Our Services</a>
+			<a href="team.html" class="buttons">Our Team</a>
+			<a href="*" class="buttons">Contact Us</a>
+			<a href="book.html" class="book-button">Book Appointment</a>
+		</div>
+	</div> 
+
+    <div class="empty-space"></div>
+
+    <div class="center-content">
+        <h1 id="booking-head">Book Your Appointment</h1>
+        <p>Please fill out the form below to book your appointment. Your request will be processed as soon as possible.</p>
+    </div>
+
+    <form id="registration-form" action="*">
+		<label id="name-label">Full Name</label>
+		<input type="text" id="name-input" required>
+
+		<div class="email-phone">
+			<div>
+				<label id="email-label">Email</label>
+				<input type="email" id="email-input" required>
+			</div>
+			<div>
+				<label id="phone-label">Phone Number</label>
+				<input type="number" id="phone-input" required>
+			</div>
+		</div>
+
+		<hr id="linebreak">
+		<p id="optional-text">The fields below are optional. You may skip them and click submit</p>
+
+		<div class="date-timeslot">
+			<div>
+				<label id="date-label">Preferred Date</label>
+				<input type="date" id="date-input">
+			</div>
+			<div>
+				<label id="timeslot-label">Preferred Time Slot</label>
+				<select id="timeslot-select">
+					<option value="8:00 AM - 12:00PM">8:00 AM - 12:00 PM</option>
+					<option value="12:00 PM - 4:00PM">12:00 PM - 4:00 PM</option>
+					<option value="4:00 PM - 7:00PM">4:00 PM - 7:00 PM</option>
+					<option value="7:00 PM - 10:00PM">7:00 PM - 10:00 PM</option>
+				</select>
+			</div>
+		</div>
+
+		<input type="submit" value="Book Appointment" id="submit-button">
+	</form>
+</body>
+</html>
