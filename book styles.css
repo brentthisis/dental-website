@@ -15,12 +15,11 @@
 
 html, body {
     width: 100%;
-    padding-bottom: 50px;
     margin: 0;
     overflow-x: hidden;
 }
 
-.center-content {
+.center-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +28,7 @@ html, body {
     margin: auto;
 }
 
-.center-content > * {
+.center-heading > * {
     margin: 0;
     padding: 0;
 }
@@ -54,7 +53,6 @@ html, body {
     padding: 10px;
     width: 200px; 
     height: auto;  
-    flex-shrink: 0;
 }
 
 .button-container {
@@ -116,7 +114,7 @@ html, body {
     margin-top: 20px;
 }
 
-.center-content p {
+.center-heading p {
     font-family: "Work Sans";
     font-size: 18px;
     font-weight: bold;
@@ -162,7 +160,7 @@ html, body {
     display: flex;
 }
 
-#email-label, #phone-label, #date-label, #timeslot-label {
+#email-label, #phone-label, #date-label, #timeslot-label, #message {
     font-family: "Torus Regular";
     font-size: 18px;
     display: block;
@@ -195,8 +193,19 @@ html, body {
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
-    width: 400px;
+    width: 395px;
     padding: 14px;
+}
+
+#textarea {
+    width: 100%;
+    height: 100px;
+    min-height: 40px;
+    border-radius: 4px;
+    border-width: 1px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 #submit-button {
@@ -226,4 +235,71 @@ input:not(#submit-button) {
 
 input::placeholder {
     text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(165, 212, 253);
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-wrapper > * {
+    font-family: "Torus Regular";
+}
+
+.footer-contact, .footer-quick {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#footer-number {
+    background-image: url("Images-&-Fonts/phone-call.png");
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+}
+
+#footer-email {
+    background-image: url("Images-&-Fonts/email.png");
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-repeat: no-repeat; 
+}
+
+#footer-location {
+    background-image: url("Images-&-Fonts/pin.png");
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-repeat: no-repeat;  
+}
+
+.footer-quick ul, a {
+    text-decoration: none;
+}
+
+.copyright-footer {
+    background-color: rgb(108, 174, 232);
+    width: 100%;
+    text-align: center;
+}
+
+#copyright {
+    font-family: "Torus Regular";
 }
