@@ -15,6 +15,7 @@
 
 html, body {
     width: 100%;
+    padding-bottom: 50px;
     margin: 0;
     overflow-x: hidden;
 }
@@ -184,7 +185,6 @@ html, body {
     border-radius: 40px;
     width: 1400px;
     box-shadow: inset 0px 0px 10px rgb(150, 150, 150);
-    background-color: rgba(255, 192, 203, 0.775);
 
 }
 
@@ -206,7 +206,7 @@ html, body {
   display: flex;
   flex-direction: column; /* Sets the image to be on TOP of the text */
   width: 320px;
-  background-color: white;
+  background-color: #F9F8F3;
   padding: 30px;
   text-align: center;
   border-radius: 10px;
@@ -215,7 +215,7 @@ html, body {
 }
 
 .service-card:hover {
-    box-shadow: -1px 2px 10px 5px rgba(255, 152, 170, 0.85);
+    background-color: rgb(98, 155, 205);
     transform: scale(0.98);
 }
 
@@ -284,7 +284,6 @@ html, body {
 
 #footer {
     display: flex;
-    flex-direction: column;
     background-color: rgb(165, 212, 253);
     width: 100%;
     height: auto;
@@ -328,14 +327,4 @@ html, body {
 
 .footer-quick ul, a {
     text-decoration: none;
-}
-
-.copyright-footer {
-    background-color: rgb(108, 174, 232);
-    width: 100%;
-    text-align: center;
-}
-
-#copyright {
-    font-family: "Torus Regular";
 }
