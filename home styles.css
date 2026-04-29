@@ -61,7 +61,6 @@ html, body {
 
 .button-container a {
     text-decoration: none;
-    align-items: center;
 }
 
 .buttons {
@@ -102,7 +101,7 @@ html, body {
     font-size: clamp(10px, 1.5vw, 20px);
 }
 
-/* Styling the HEROOO IMAGEEE 🗣️🗣️🗣️ */
+/* Styling the hero image */
 
 .hero-img {
     display: flex;

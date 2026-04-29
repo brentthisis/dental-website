@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dental Clinic Website - Booking Page</title>
+    <title>Book Your Appointment</title>
     <link rel="stylesheet" href="book styles.css">
+	<link rel="icon" type="image/png" href="Images-&-Fonts/icon.png">
 </head>
 
 <body>
@@ -31,18 +32,18 @@
         <p>Please fill out the form below to book your appointment. Your request will be processed as soon as possible.</p>
     </div>
 
-    <form id="registration-form" action="*">
+    <form id="registration-form" action="insert.php" method="POST">
 		<label id="name-label">Full Name</label>
-		<input type="text" id="name-input" required>
+		<input type="text" id="name-input" name="name" required>
 
 		<div class="email-phone">
 			<div>
 				<label id="email-label">Email</label>
-				<input type="email" id="email-input" required>
+				<input type="email" id="email-input" name="email" required>
 			</div>
 			<div>
 				<label id="phone-label">Phone Number</label>
-				<input type="number" id="phone-input" required>
+				<input type="number" id="phone-input" name="phone" required>
 			</div>
 		</div>
 
@@ -52,11 +53,11 @@
 		<div class="date-timeslot">
 			<div>
 				<label id="date-label">Preferred Date</label>
-				<input type="date" id="date-input">
+				<input type="date" id="date-input" name="date">
 			</div>
 			<div>
 				<label id="timeslot-label">Preferred Time Slot</label>
-				<select id="timeslot-select">
+				<select id="timeslot-select" name="time">
 					<option value="8:00 AM - 12:00PM">8:00 AM - 12:00 PM</option>
 					<option value="12:00 PM - 4:00PM">12:00 PM - 4:00 PM</option>
 					<option value="4:00 PM - 7:00PM">4:00 PM - 7:00 PM</option>
@@ -67,7 +68,7 @@
 
 		<div>
 			<label id="message">Message (You may indicate your reason of visit here)</label>
-			<textarea id="textarea"></textarea>
+			<textarea id="textarea" name="message"></textarea>
 		</div>
 		
 		<input type="submit" value="Book Appointment" id="submit-button">
@@ -85,8 +86,8 @@
 			<div class="footer-quick">
 				<h3>Quick Links</h3>
 				<ul>
-					<li><a href="*">About Us</a></li>
-					<li><a href="*">Our Services</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Our Services</a></li>
 					<li><a href="team.html">Our Team</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 					<li><a href="book.html">Book Appointment</a></li>

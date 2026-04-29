@@ -22,6 +22,9 @@ html, body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
 
 .bg-content {
@@ -30,6 +33,7 @@ html, body {
     align-items: center;
     text-align: center;
     gap: 20px;
+    flex: 1
 }
 
 .bg-content > * {
@@ -67,7 +71,6 @@ html, body {
 
 .button-container a {
     text-decoration: none;
-    align-items: center;
 }
 
 .buttons {
@@ -176,6 +179,13 @@ html, body {
     background-size: 20px 20px;
     padding-left: 30px;
     background-repeat: no-repeat;
+}
+
+#time-logo {
+    background-image: url("Images-&-Fonts/clock.png");
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-repeat: no-repeat;  
 }
 
 /* Footer */

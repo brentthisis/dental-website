@@ -55,7 +55,6 @@ html, body {
 
 .button-container a {
     text-decoration: none;
-    align-items: center;
 }
 
 .buttons {
@@ -108,19 +107,20 @@ html, body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 20px;
     background: linear-gradient(to top, rgb(141, 235, 249), transparent 50%);
 }
 
 .hero-text-wrapper {
     width: 650px;
+    padding: 50px;
 }
 
 .hero-text-wrapper h1 {
     font-family: "Tsukimi Rounded";
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
-    line-height: 90px;
+    line-height: 1.9;
 }
 
 .hero-text-wrapper p {
@@ -149,7 +149,7 @@ html, body {
     width: auto;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: 200px;
 }
 
 .philosophy-section h1 {
@@ -208,7 +208,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     padding: 60px 0px 15px 0px;
 }
 .location-text h1 {
@@ -226,7 +226,7 @@ html, body {
 }
 
 .location-section iframe {
-    width: 800px;
+    width: 750px;
     height: 500px;
     border: 0;
     border-radius: 20px;
